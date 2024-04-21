@@ -2,7 +2,7 @@
 {
     public class MessageDTO
     {
-        public string Target { get; set; }
+        public string Source { get; set; }
         public string Data { get; set; }
     }
 }

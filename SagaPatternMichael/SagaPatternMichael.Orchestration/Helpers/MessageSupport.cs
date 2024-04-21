@@ -2,56 +2,51 @@
 using Newtonsoft.Json;
 using RabbitMQ.Client;
 using SagaPatternMichael.Orchestration.Models;
+using SagaPatternMichael.Orchestration.RabbitMQ.Configurations;
+using System.Text;
 
 namespace SagaPatternMichael.Orchestration.Helpers
 {
-    public class MessageSupport
+    public class MessageSupport : MessageConnection
     {
         private readonly IConfiguration _configuration;
-        private IModel _channel;
-        private IConnection _connection;
 
         public MessageSupport(IConfiguration configuration)
         {
             _configuration = configuration;
         }
 
-        private void InitBus()
-        {
-            try
-            {
-                ConnectionFactory connectionFactory = new ConnectionFactory();
-                connectionFactory.HostName = _configuration["RabbitMQHost"];
-                connectionFactory.Port = Convert.ToInt32(_configuration["RabbitMQPort"]);
-                _connection = connectionFactory.CreateConnection();
-                _channel = _connection.CreateModel();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error at MessageSupport.InitBus: " + ex.Message);
-            }
-        }
-
-        private void InitBroker(MessageChannel messageChannel)
+        protected override void InitBroker(MessageChannel messageChannel)
         {
             if (!_connection.IsOpen)
             {
-                InitBus();
+                base.GetConnectionMsg(_configuration, messageChannel.QueueName, messageChannel.ExchangeName, messageChannel.RoutingKey);
             }
-            _channel.ExchangeDeclare(messageChannel.ExchangeName,)
+            _channel.ExchangeDeclare(messageChannel.ExchangeName, ExchangeType.Direct);
+            _channel.QueueDeclare(messageChannel.QueueName, false, false, false, null!);
+            _channel.QueueBind(messageChannel.QueueName, messageChannel.ExchangeName, messageChannel.RoutingKey);
         }
-        public Task SendMessage(MessageDTO messageDTO)
+
+        public async Task SendMessage(MessageDTO messageDTO, string queue, string exchange, string routingKey)
         {
             try
             {
                 if (messageDTO == null) throw new ArgumentNullException(nameof(messageDTO));
-                var messageChannel = JsonConvert.DeserializeObject<MessageChannel>(messageDTO.Target);
-                if (messageChannel == null!) throw new ArgumentNullException(nameof(messageChannel));
+                InitBroker(new MessageChannel {ExchangeName=exchange,QueueName=queue,RoutingKey=routingKey });
 
+                var rawSerial = JsonConvert.SerializeObject(messageDTO.Data);
+                var body = Encoding.UTF8.GetBytes(rawSerial);
+                _channel.ConfirmSelect();
+                _channel.BasicPublish(exchange, routingKey, null!, body);
+                if (!_channel.WaitForConfirms(new TimeSpan(0, 0, 5)))
+                {
+                    Console.WriteLine("Send fail");
+                }
+                await Task.CompletedTask;
             }
             catch (Exception ex)
             {
-
+                throw new Exception("Error at SendMessage: " + ex.Message);
             }
         }
     }

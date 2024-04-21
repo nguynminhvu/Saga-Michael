@@ -1,27 +1,36 @@
 ﻿using Microsoft.Extensions.Configuration;
 using RabbitMQ.Client;
+using SagaPatternMichael.Orchestration.Models;
 
 namespace SagaPatternMichael.Orchestration.RabbitMQ.Configurations
 {
-    public static class MessageConnection
+    public abstract class MessageConnection
     {
-        private static IConnection _connection;
-        private static IModel _channel;
-
-        public static IModel GetConnectionMsg(this IConfiguration configuration, string queueName, string exchangeName, string routingKey)
+        protected IConnection _connection;
+        protected IModel _channel;
+        public IModel GetConnectionMsg(IConfiguration configuration, string queueName, string exchangeName, string routingKey)
         {
-            ConnectionFactory connectionFactory = new ConnectionFactory();
-            connectionFactory.HostName = configuration["RabbitMQHost"];
-            connectionFactory.Port = Convert.ToInt32(configuration["RabbitMQPort"]);
-            connectionFactory.RequestedHeartbeat = TimeSpan.FromSeconds(60);
+            try
+            {
+                ConnectionFactory connectionFactory = new ConnectionFactory();
+                connectionFactory.HostName = configuration["RabbitMQHost"];
+                connectionFactory.Port = Convert.ToInt32(configuration["RabbitMQPort"]);
+                connectionFactory.RequestedHeartbeat = TimeSpan.FromSeconds(60);
 
-            _connection = connectionFactory.CreateConnection();
-            _channel = _connection.CreateModel();
+                _connection = connectionFactory.CreateConnection();
+                _channel = _connection.CreateModel();
 
-            _channel.ExchangeDeclare(exchangeName, ExchangeType.Direct);
-            _channel.QueueDeclare(queueName, false, false, false, null!);
-            _channel.QueueBind(queueName, exchangeName, routingKey);
-            return _channel;
+                _channel.ExchangeDeclare(exchangeName, ExchangeType.Direct);
+                _channel.QueueDeclare(queueName, false, false, false, null!);
+                _channel.QueueBind(queueName, exchangeName, routingKey);
+                return _channel;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return null!;
+            }
         }
+        protected abstract void InitBroker(MessageChannel messageChannel);
     }
 }
