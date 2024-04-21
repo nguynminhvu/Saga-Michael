@@ -1,0 +1,14 @@
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\bin\Debug\net8.0\SagaPatternMichael.Product.Infrastructure.deps.json
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\bin\Debug\net8.0\SagaPatternMichael.Product.Infrastructure.dll
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\bin\Debug\net8.0\SagaPatternMichael.Product.Infrastructure.pdb
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\obj\Debug\net8.0\SagaPatternMichael.Product.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\obj\Debug\net8.0\SagaPatternMichael.Product.Infrastructure.AssemblyInfoInputs.cache
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\obj\Debug\net8.0\SagaPatternMichael.Product.Infrastructure.AssemblyInfo.cs
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\obj\Debug\net8.0\SagaPatternMichael.Product.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\obj\Debug\net8.0\SagaPatternMichael.Product.Infrastructure.dll
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\obj\Debug\net8.0\refint\SagaPatternMichael.Product.Infrastructure.dll
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\obj\Debug\net8.0\SagaPatternMichael.Product.Infrastructure.pdb
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\obj\Debug\net8.0\ref\SagaPatternMichael.Product.Infrastructure.dll
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\bin\Debug\net8.0\SagaPatternMichael.Product.Infrastructure.runtimeconfig.json
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\obj\Debug\net8.0\SagaPatternMichael.Product.Infrastructure.csproj.AssemblyReference.cache
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Product.Infrastructure\obj\Debug\net8.0\SagaPatternMichael.Product.Infrastructure.genruntimeconfig.cache

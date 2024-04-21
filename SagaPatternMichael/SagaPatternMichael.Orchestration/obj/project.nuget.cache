@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "x+EcVEG8+MGF5xsWFO16IXoGuk3B2Dj0mxd7nwXCqe3RGWt1hCo3ATcGH/rLkT/n9pTxSu9vLg4/VpPUt3vNyA==",
+  "success": true,
+  "projectFilePath": "D:\\Code Fun\\C#\\Web\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HOME\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\HOME\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\HOME\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\HOME\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
+    "C:\\Users\\HOME\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\HOME\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

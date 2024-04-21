@@ -1,0 +1,11 @@
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Orchestration\bin\Debug\net8.0\SagaPatternMichael.Orchestration.deps.json
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Orchestration\bin\Debug\net8.0\SagaPatternMichael.Orchestration.dll
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Orchestration\bin\Debug\net8.0\SagaPatternMichael.Orchestration.pdb
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Orchestration\obj\Debug\net8.0\SagaPatternMichael.Orchestration.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Orchestration\obj\Debug\net8.0\SagaPatternMichael.Orchestration.AssemblyInfoInputs.cache
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Orchestration\obj\Debug\net8.0\SagaPatternMichael.Orchestration.AssemblyInfo.cs
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Orchestration\obj\Debug\net8.0\SagaPatternMichael.Orchestration.csproj.CoreCompileInputs.cache
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Orchestration\obj\Debug\net8.0\SagaPatternMichael.Orchestration.dll
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Orchestration\obj\Debug\net8.0\refint\SagaPatternMichael.Orchestration.dll
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Orchestration\obj\Debug\net8.0\SagaPatternMichael.Orchestration.pdb
+D:\Code Fun\C#\Web\SagaPatternMichael\SagaPatternMichael.Orchestration\obj\Debug\net8.0\ref\SagaPatternMichael.Orchestration.dll

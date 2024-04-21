@@ -1,0 +1,6 @@
+@SagaPatternMichael.Product_HostAddress = http://localhost:5200
+
+GET {{SagaPatternMichael.Product_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
