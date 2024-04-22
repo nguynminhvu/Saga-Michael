@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using SagaPatternMichael.Order.Core.Entities;
 using SagaPatternMichael.Order.DTOs;
+using SagaPatternMichael.Order.RabbitMQ.Events;
 using SagaPatternMichael.Order.UnitOfWork;
 
 namespace SagaPatternMichael.Order.Services
@@ -19,10 +21,12 @@ namespace SagaPatternMichael.Order.Services
 
     public class OrderService : IOrderService
     {
+        private readonly IConfiguration _configuration;
         private readonly IUnitOfWork _uow;
 
-        public OrderService(IUnitOfWork unitOfWork)
+        public OrderService(IUnitOfWork unitOfWork, IConfiguration configuration)
         {
+            _configuration = configuration;
             _uow = unitOfWork;
         }
 
@@ -47,19 +51,51 @@ namespace SagaPatternMichael.Order.Services
             }
             var order = Order.Core.Entities.Order.Create(amount);
             await _uow.OrderRepository.AddAsync(order);
+            List<OrderLineDTO> orderLines = new();
 
             foreach (var item in cartDTO.ProductDTOs)
             {
-                await _uow.OrderLineRepository.AddAsync(OrderLine.Create(order.Id, item.Price, item.Quantity, item.Id));
+                var orderLine = OrderLine.Create(order.Id, item.Price, item.Quantity, item.Id);
+                orderLines.Add(new OrderLineDTO
+                {
+                    Id = orderLine.Id,
+                    CreatedOn = DateTime.Now,
+                    ModifiedOn = DateTime.Now,
+                    OrderId = order.Id,
+                    Price = item.Price,
+                    Quantity = item.Quantity,
+                    ProductId = item.Id
+                });
+                await _uow.OrderLineRepository.AddAsync(orderLine);
             }
+            OrderDTO orderDTO = new OrderDTO
+            {
+                Id = order.Id,
+                Amount = amount,
+                ModifiedOn = DateTime.Now,
+                CreatedOn = DateTime.Now,
+                OrderLines = orderLines
+            };
             var rs = await _uow.SaveChangesAsync();
             if (rs > 0)
             {
                 // raise event
+                OrderCompletedEvent orderCompletedEvent = new OrderCompletedEvent(_configuration);
+                await orderCompletedEvent.SendMessage(new MessageDTO
+                {
+                    Data = JsonConvert.SerializeObject(orderDTO),
+                    Source = "OrderCompletedEvent"
+                }, OrchestrationQueue.OrchestrationEvent, OrchestrationExchange.OrchestrationEvent, OrchestrationRoutingKey.OrchestrationEvent);
             }
             else
             {
                 // roll
+                OrderErrorEvent orderErrorEvent = new OrderErrorEvent(_configuration);
+                await orderErrorEvent.SendMessage(new MessageDTO
+                {
+                    Data = JsonConvert.SerializeObject(orderDTO),
+                    Source = "OrderErrorEvent"
+                }, OrchestrationQueue.OrchestrationErrorEvent, OrchestrationExchange.OrchestrationErrorEvent, OrchestrationRoutingKey.OrchestrationErrorEvent);
             }
         }
 
