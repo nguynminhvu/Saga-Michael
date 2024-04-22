@@ -1,6 +1,8 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
+using SagaPatternMichael.Orchestration.Events.Checkouts;
 using SagaPatternMichael.Orchestration.Helpers;
 using SagaPatternMichael.Orchestration.Models;
 using SagaPatternMichael.Orchestration.Services;
@@ -9,11 +11,13 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
 {
     public class EventFactory : BackgroundService, IDisposable
     {
+        private readonly IConfiguration _configuration;
         private readonly IServiceScopeFactory _scopeFactory;
         private readonly MessageSupport _messageSupport;
         private CancellationTokenSource _cancellationTokenSource = new();
-        public EventFactory(MessageSupport messageSupport, IServiceScopeFactory serviceScopeFactory)
+        public EventFactory(MessageSupport messageSupport, IServiceScopeFactory serviceScopeFactory, IConfiguration configuration)
         {
+            _configuration = configuration;
             _scopeFactory = serviceScopeFactory;
             _messageSupport = messageSupport;
         }
@@ -23,9 +27,19 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
             switch (messageDTO.Source)
             {
                 // Do with specific business service, now is not need
-                case "": break;
+                case "OrderCompletedEvent":
+                    OrderCompletedEvent orderCompletedEvent = new(_configuration);
+                    await orderCompletedEvent.SendMessage(messageDTO, orderCompletedEvent.Queue, orderCompletedEvent.Exchange, orderCompletedEvent.RoutingKey);
+                    break;
+                case "InventoryCompletedEvent":
+                    InventoryCompletedEvent inventoryCompletedEvent = new InventoryCompletedEvent(_configuration);
+                    await inventoryCompletedEvent.SendMessage(messageDTO, inventoryCompletedEvent.Queue, inventoryCompletedEvent.Exchange, inventoryCompletedEvent.RoutingKey);
+                    break;
+                case "PaymentCompletedEvent":
+                    PaymentCompletedEvent paymentCompletedEvent = new PaymentCompletedEvent(_configuration);
+                    await paymentCompletedEvent.SendMessage(messageDTO, paymentCompletedEvent.Queue, paymentCompletedEvent.Exchange, paymentCompletedEvent.RoutingKey);
+                    break;
             }
-            await _messageSupport.SendMessage(messageDTO);
         }
 
         public void StartOustandingEvent()

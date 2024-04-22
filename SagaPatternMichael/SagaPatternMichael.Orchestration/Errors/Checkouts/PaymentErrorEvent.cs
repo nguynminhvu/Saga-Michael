@@ -1,0 +1,18 @@
+﻿using Microsoft.Extensions.Configuration;
+using SagaPatternMichael.Orchestration.Helpers;
+
+namespace SagaPatternMichael.Orchestration.Errors.Checkouts
+{
+    public class PaymentErrorEvent : MessageSupport
+    {
+        public PaymentErrorEvent(IConfiguration configuration) : base(configuration)
+        {
+        }
+
+        public override string Queue => "InventoryErrorQueue";
+
+        public override string Exchange => "InventoryErrorExchange";
+
+        public override string RoutingKey => "inventory-error-routing-key";
+    }
+}

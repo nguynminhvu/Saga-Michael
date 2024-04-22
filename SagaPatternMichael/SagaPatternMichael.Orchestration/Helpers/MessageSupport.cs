@@ -7,9 +7,12 @@ using System.Text;
 
 namespace SagaPatternMichael.Orchestration.Helpers
 {
-    public class MessageSupport : MessageConnection
+    public abstract class MessageSupport : MessageConnection
     {
         private readonly IConfiguration _configuration;
+        public abstract string Queue { get; }
+        public abstract string Exchange { get; }
+        public abstract string RoutingKey { get; }
 
         public MessageSupport(IConfiguration configuration)
         {
@@ -32,7 +35,7 @@ namespace SagaPatternMichael.Orchestration.Helpers
             try
             {
                 if (messageDTO == null) throw new ArgumentNullException(nameof(messageDTO));
-                InitBroker(new MessageChannel {ExchangeName=exchange,QueueName=queue,RoutingKey=routingKey });
+                InitBroker(new MessageChannel { ExchangeName = exchange, QueueName = queue, RoutingKey = routingKey });
 
                 var rawSerial = JsonConvert.SerializeObject(messageDTO.Data);
                 var body = Encoding.UTF8.GetBytes(rawSerial);

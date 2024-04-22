@@ -1,7 +1,9 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
-using SagaPatternMichael.Orchestration.Events;
+using SagaPatternMichael.Orchestration.Errors.Checkouts;
+using SagaPatternMichael.Orchestration.Events.Checkouts;
 using SagaPatternMichael.Orchestration.Helpers;
 using SagaPatternMichael.Orchestration.Models;
 using SagaPatternMichael.Orchestration.Services;
@@ -16,11 +18,13 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
     public class EventErrorFactory : BackgroundService, IDisposable
     {
         private CancellationTokenSource _cancellationTokenSource = new();
+        private readonly IConfiguration _configuration;
         private readonly IServiceScopeFactory _scopeFactory;
         private readonly MessageSupport _messageSupport;
 
-        public EventErrorFactory(MessageSupport messageSupport, IServiceScopeFactory serviceScopeFactory)
+        public EventErrorFactory(MessageSupport messageSupport, IServiceScopeFactory serviceScopeFactory, IConfiguration configuration)
         {
+            _configuration = configuration;
             _scopeFactory = serviceScopeFactory;
             _messageSupport = messageSupport;
         }
@@ -33,9 +37,18 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
         {
             switch (messageDTO.Source)
             {
-                case "OrderCompletedEvent": 
-                    OrderCompletedEvent orderCompletedEvent = new OrderCompletedEvent(_messageSupport); 
-                    await orderCompletedEvent.SendEvent(messageDTO); break;
+                case "OrderErrorEvent":
+                    OrderErrorEvent orderErrorEvent = new OrderErrorEvent(_configuration);
+                    await orderErrorEvent.SendMessage(messageDTO, orderErrorEvent.Queue, orderErrorEvent.Exchange, orderErrorEvent.RoutingKey);
+                    break;
+                case "InventoryErrorEvent":
+                    InventoryErrorEvent inventoryErrorEvent = new InventoryErrorEvent(_configuration);
+                    await inventoryErrorEvent.SendMessage(messageDTO, inventoryErrorEvent.Queue, inventoryErrorEvent.Exchange, inventoryErrorEvent.RoutingKey);
+                    break;
+                case "PaymentErrorEvent":
+                    PaymentErrorEvent paymentErrorEvent = new PaymentErrorEvent(_configuration);
+                    await paymentErrorEvent.SendMessage(messageDTO, paymentErrorEvent.Queue, paymentErrorEvent.Exchange, paymentErrorEvent.RoutingKey);
+                    break;
             }
         }
 
