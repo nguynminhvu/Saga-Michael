@@ -83,17 +83,26 @@ namespace SagaPatternMichael.Order.RabbitMQ
         {
             switch (messageDTO.Source)
             {
-                case "PaymentCompletedEvent":
+                case "InventoryErrorCommand":
                     using (var scope = _scopeFactory.CreateScope())
                     {
                         var orderService = scope.ServiceProvider.GetService<IOrderService>();
                         if (orderService != null)
                         {
-                            OrderPaymentedCommand orderPaymentedCommand = new OrderPaymentedCommand(_configuration, orderService);
-                            await orderPaymentedCommand.UpdateOrder(messageDTO);
+                            InventoryErrorCommand orderPaymentedCommand = new InventoryErrorCommand(_configuration);
+                            var order = JsonConvert.DeserializeObject<Core.Entities.Order>(messageDTO.Data);
+                            if (order != null!)
+                            {
+                                order.Update("Payment");
+                                await orderService.UpdateOrder(order);
+                            }
                             await orderPaymentedCommand.SendMessage(messageDTO, orderPaymentedCommand.Queue, orderPaymentedCommand.Exchange, orderPaymentedCommand.RoutingKey);
                         }
                     }
+                    break;
+                case "PaymentCompletedCommand":
+                    NotificationEvent notificationEvent = new NotificationEvent(_configuration);
+                    await notificationEvent.SendMessage(messageDTO, notificationEvent.Queue, notificationEvent.Exchange, notificationEvent.RoutingKey);
                     break;
             }
         }

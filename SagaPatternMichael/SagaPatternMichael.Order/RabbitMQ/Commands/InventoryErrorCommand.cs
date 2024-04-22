@@ -7,10 +7,10 @@ namespace SagaPatternMichael.Order.RabbitMQ.Commands
         {
         }
 
-        public override string Queue => "";
+        public override string Queue => "InventoryErrorQueue";
 
-        public override string Exchange => "";
+        public override string Exchange => "InventoryErrorExchange";
 
-        public override string RoutingKey => "";
+        public override string RoutingKey => "inventory-error-routing-key";
     }
 }

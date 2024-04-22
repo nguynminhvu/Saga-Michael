@@ -3,9 +3,11 @@ using SagaPatternMichael.Orchestration.Helpers;
 
 namespace SagaPatternMichael.Orchestration.Errors.Checkouts
 {
-    public class PaymentErrorEvent : MessageSupport
+    public class InventoryErrorCommand : MessageSupport
     {
-        public PaymentErrorEvent(IConfiguration configuration) : base(configuration)
+        private readonly MessageSupport _messageSupport;
+
+        public InventoryErrorCommand(IConfiguration configuration) : base(configuration)
         {
         }
 

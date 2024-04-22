@@ -4,9 +4,9 @@ using SagaPatternMichael.Orchestration.Models;
 
 namespace SagaPatternMichael.Orchestration.Errors.Checkouts
 {
-    public class OrderErrorEvent : MessageSupport
+    public class OrderErrorCommand : MessageSupport
     {
-        public OrderErrorEvent(IConfiguration configuration) : base(configuration)
+        public OrderErrorCommand(IConfiguration configuration) : base(configuration)
         {
         }
 

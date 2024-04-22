@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using SagaPatternMichael.Orchestration.Errors.Checkouts;
+using SagaPatternMichael.Orchestration.Events;
 using SagaPatternMichael.Orchestration.Events.Checkouts;
 using SagaPatternMichael.Orchestration.Helpers;
 using SagaPatternMichael.Orchestration.Models;
@@ -36,16 +37,21 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
             switch (messageDTO.Source)
             {
                 case "OrderErrorEvent":
-                    OrderErrorEvent orderErrorEvent = new OrderErrorEvent(_configuration);
+                    NotificationEvent notificationEvent = new NotificationEvent(_configuration);
+                    messageDTO.Source = "NotificationEvent";
+                    await notificationEvent.SendMessage(messageDTO, notificationEvent.Queue, notificationEvent.Exchange, notificationEvent.RoutingKey);
+                    break;
+
+                case "InventoryErrorEvent":
+                    OrderErrorCommand orderErrorEvent = new OrderErrorCommand(_configuration);
+                    messageDTO.Source = "OrderErrorCommand";
                     await orderErrorEvent.SendMessage(messageDTO, orderErrorEvent.Queue, orderErrorEvent.Exchange, orderErrorEvent.RoutingKey);
                     break;
-                case "InventoryErrorEvent":
-                    InventoryErrorEvent inventoryErrorEvent = new InventoryErrorEvent(_configuration);
-                    await inventoryErrorEvent.SendMessage(messageDTO, inventoryErrorEvent.Queue, inventoryErrorEvent.Exchange, inventoryErrorEvent.RoutingKey);
-                    break;
+
                 case "PaymentErrorEvent":
-                    PaymentErrorEvent paymentErrorEvent = new PaymentErrorEvent(_configuration);
-                    await paymentErrorEvent.SendMessage(messageDTO, paymentErrorEvent.Queue, paymentErrorEvent.Exchange, paymentErrorEvent.RoutingKey);
+                    InventoryErrorCommand inventoryErrorEvent = new InventoryErrorCommand(_configuration);
+                    messageDTO.Source = "InventoryErrorCommand";
+                    await inventoryErrorEvent.SendMessage(messageDTO, inventoryErrorEvent.Queue, inventoryErrorEvent.Exchange, inventoryErrorEvent.RoutingKey);
                     break;
             }
         }

@@ -47,7 +47,7 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
                         var msgDTO = JsonConvert.DeserializeObject<MessageDTO>(body);
                         if (msgDTO != null!)
                         {
-                            await _orchestrationService.AddMsgError(EventErrorBox.Create(JsonConvert.SerializeObject(msgDTO)));
+                            await _orchestrationService.AddMsg(EventBox.Create(JsonConvert.SerializeObject(msgDTO)));
                             _eventFactory.StartOustandingEvent();
                         }
                     }

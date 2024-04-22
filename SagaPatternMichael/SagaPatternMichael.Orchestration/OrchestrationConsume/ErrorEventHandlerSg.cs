@@ -45,7 +45,7 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
                         var _orchestrationService = scope.ServiceProvider.GetService<IOrchestrationService>();
                         if (_orchestrationService != null)
                         {
-                            await _orchestrationService.AddMsg(Data.EventBox.Create(JsonConvert.SerializeObject(messageDTO)));
+                            await _orchestrationService.AddMsgError(Data.EventErrorBox.Create(JsonConvert.SerializeObject(messageDTO)));
                             _eventFactory.StartOustandingEvent();
                         }
                     }

@@ -26,16 +26,21 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
             {
                 // Do with specific business service, now is not need
                 case "OrderCompletedEvent":
-                    OrderCompletedEvent orderCompletedEvent = new(_configuration);
-                    await orderCompletedEvent.SendMessage(messageDTO, orderCompletedEvent.Queue, orderCompletedEvent.Exchange, orderCompletedEvent.RoutingKey);
-                    break;
-                case "InventoryCompletedEvent":
-                    InventoryCompletedEvent inventoryCompletedEvent = new InventoryCompletedEvent(_configuration);
+                    InventoryCompletedCommand inventoryCompletedEvent = new InventoryCompletedCommand(_configuration);
+                    messageDTO.Source = "InventoryCompletedCommand";
                     await inventoryCompletedEvent.SendMessage(messageDTO, inventoryCompletedEvent.Queue, inventoryCompletedEvent.Exchange, inventoryCompletedEvent.RoutingKey);
                     break;
-                case "PaymentCompletedEvent":
-                    PaymentCompletedEvent paymentCompletedEvent = new PaymentCompletedEvent(_configuration);
+
+                case "InventoryCompletedEvent":
+                    PaymentCompletedCommand paymentCompletedEvent = new PaymentCompletedCommand(_configuration);
+                    messageDTO.Source = "PaymentCompletedCommand";
                     await paymentCompletedEvent.SendMessage(messageDTO, paymentCompletedEvent.Queue, paymentCompletedEvent.Exchange, paymentCompletedEvent.RoutingKey);
+                    break;
+
+                case "PaymentCompletedEvent":
+                    OrderCompletedCommand orderCompletedEvent = new(_configuration);
+                    messageDTO.Source = "OrderCompletedCommand";
+                    await orderCompletedEvent.SendMessage(messageDTO, orderCompletedEvent.Queue, orderCompletedEvent.Exchange, orderCompletedEvent.RoutingKey);
                     break;
             }
         }
