@@ -1,4 +1,7 @@
-﻿namespace SagaPatternMichael.Order.Core.Entities;
+﻿using System;
+using System.Collections.Generic;
+
+namespace SagaPatternMichael.Order.Core.Entities;
 
 public partial class Order
 {
@@ -6,16 +9,17 @@ public partial class Order
 
     public double Amount { get; set; }
 
-    ICollection<OrderLine> OrderLines { get; set; } = new List<OrderLine>();    
+    public string Status { get; set; } = null!;
+
     public DateTime CreatedOn { get; set; }
 
     public DateTime ModifiedOn { get; set; }
 
     private Order()
     {
-        
+
     }
-    protected Order(Guid id, double amount, DateTime createdOn, DateTime modifiedOn)
+    protected Order(Guid id, double amount, string status, DateTime createdOn, DateTime modifiedOn)
     {
         Id = Guid.NewGuid();
         Amount = amount;
@@ -24,7 +28,11 @@ public partial class Order
     }
 
     public static Order Create(double amount)
-     => new Order(Guid.NewGuid(), amount, DateTime.Now, DateTime.Now);
+     => new Order(Guid.NewGuid(), amount, "Process", DateTime.Now, DateTime.Now);
 
-
+    public void Update(string status)
+    {
+        Status = status;
+        ModifiedOn = DateTime.Now;
+    }
 }

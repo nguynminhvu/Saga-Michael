@@ -9,10 +9,11 @@ namespace SagaPatternMichael.Orchestration.Events.Checkouts
         {
         }
 
-        public override string Queue => "NotificationQueue";
+        public override string Queue => "OrderPaymentedQueue";
 
-        public override string Exchange => "NotificationExchange";
+        public override string Exchange => "OrderPaymentedExchange";
 
-        public override string RoutingKey => "notification-routing-key";
+        public override string RoutingKey => "order-paymented-routing-key";
     }
+ 
 }

@@ -41,7 +41,7 @@ namespace SagaPatternMichael.Orchestration.Helpers
                 var body = Encoding.UTF8.GetBytes(rawSerial);
                 _channel.ConfirmSelect();
                 _channel.BasicPublish(exchange, routingKey, null!, body);
-                if (!_channel.WaitForConfirms(new TimeSpan(0, 0, 5)))
+                if (!_channel.WaitForConfirms(new TimeSpan(0, 0, 5))) // Test feature
                 {
                     Console.WriteLine("Send fail");
                 }

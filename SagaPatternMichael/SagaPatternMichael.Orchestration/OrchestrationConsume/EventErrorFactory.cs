@@ -20,13 +20,11 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
         private CancellationTokenSource _cancellationTokenSource = new();
         private readonly IConfiguration _configuration;
         private readonly IServiceScopeFactory _scopeFactory;
-        private readonly MessageSupport _messageSupport;
 
-        public EventErrorFactory(MessageSupport messageSupport, IServiceScopeFactory serviceScopeFactory, IConfiguration configuration)
+        public EventErrorFactory( IServiceScopeFactory serviceScopeFactory, IConfiguration configuration)
         {
             _configuration = configuration;
             _scopeFactory = serviceScopeFactory;
-            _messageSupport = messageSupport;
         }
         public void StartOustandingEvent()
         {
@@ -56,7 +54,7 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
         {
             try
             {
-                while (!_cancellationTokenSource.IsCancellationRequested)
+                while (!cancellationToken.IsCancellationRequested)
                 {
                     using (var scope = _scopeFactory.CreateScope())
                     {
@@ -100,7 +98,7 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            while (!_cancellationTokenSource.IsCancellationRequested)
+            while (!stoppingToken.IsCancellationRequested)
             {
                 await PublishEvent(stoppingToken);
             }
