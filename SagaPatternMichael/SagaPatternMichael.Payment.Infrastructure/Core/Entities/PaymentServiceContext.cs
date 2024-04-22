@@ -15,6 +15,8 @@ public partial class PaymentServiceContext : DbContext
     {
     }
 
+    public virtual DbSet<EventBox> EventBoxes { get; set; }
+
     public virtual DbSet<Payment> Payments { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -22,6 +24,15 @@ public partial class PaymentServiceContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<EventBox>(entity =>
+        {
+            entity.ToTable("EventBox");
+
+            entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.CreatedOn).HasColumnType("datetime");
+            entity.Property(e => e.ModifiedOn).HasColumnType("datetime");
+        });
+
         modelBuilder.Entity<Payment>(entity =>
         {
             entity.Property(e => e.Id).ValueGeneratedNever();

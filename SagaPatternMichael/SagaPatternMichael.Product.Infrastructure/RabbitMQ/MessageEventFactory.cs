@@ -1,11 +1,13 @@
 ﻿
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
-using SagaPatternMichael.Order.DTOs;
-using SagaPatternMichael.Order.RabbitMQ.Commands;
-using SagaPatternMichael.Order.RabbitMQ.Events;
-using SagaPatternMichael.Order.Services;
+using SagaPatternMichael.Product.Infrastructure.DTOs;
+using SagaPatternMichael.Product.Infrastructure.RabbitMQ.Events;
+using SagaPatternMichael.Product.Infrastructure.Services;
 
-namespace SagaPatternMichael.Order.RabbitMQ
+namespace SagaPatternMichael.Product.Infrastructure.RabbitMQ
 {
     public class MessageEventFactory : BackgroundService, IDisposable
     {
@@ -40,18 +42,18 @@ namespace SagaPatternMichael.Order.RabbitMQ
                 {
                     using (var scope = _scopeFactory.CreateScope())
                     {
-                        var _orderService = scope.ServiceProvider.GetService<IOrderService>();
+                        var _productService = scope.ServiceProvider.GetService<IProductService>();
 
-                        if (_orderService == null) throw new InvalidOperationException();
+                        if (_productService == null) throw new InvalidOperationException();
 
-                        var events = await _orderService.GetEvents();
+                        var events = await _productService.GetEvents();
                         foreach (var item in events)
                         {
                             var messageDTO = JsonConvert.DeserializeObject<MessageDTO>(item.Data);
                             if (messageDTO != null!)
                             {
                                 await CommanHandler(messageDTO);
-                                await _orderService.RemoveEvent(item);
+                                await _productService.RemoveEvent(item);
                             }
                         }
                     }
@@ -76,47 +78,45 @@ namespace SagaPatternMichael.Order.RabbitMQ
             {
                 Console.WriteLine("Error at SendMessage" + ex.ToString());
                 await Task.Delay(TimeSpan.FromSeconds(1));
-
             }
         }
+
         private async Task CommanHandler(MessageDTO messageDTO)
         {
             switch (messageDTO.Source)
             {
-                case "OrderCompletedCommand":
+                case "InventoryCompletedCommand":
                     using (var scope = _scopeFactory.CreateScope())
                     {
-                        var orderService = scope.ServiceProvider.GetService<IOrderService>();
-                        if (orderService != null)
+                        var productService = scope.ServiceProvider.GetService<IProductService>();
+                        if (productService != null)
                         {
-                            var order = JsonConvert.DeserializeObject<Core.Entities.Order>(messageDTO.Data);
+                            var order = JsonConvert.DeserializeObject<OrderDTO>(messageDTO.Data);
                             if (order != null!)
                             {
-                                order.Update("Payment");
-                                await orderService.UpdateOrder(order);
+                                await productService.UpdateProduct(order);
                             }
-                            OrderUpdateCompletedEvent notificationEvent1 = new OrderUpdateCompletedEvent(_configuration);
-                            messageDTO.Source = "OrderUpdateCompletedEvent";
-                            await notificationEvent1.SendMessage(messageDTO, notificationEvent1.Queue, notificationEvent1.Exchange, notificationEvent1.RoutingKey);
+                            InventoryCompletedEvent inventoryCompletedEvent = new InventoryCompletedEvent(_configuration);
+                            messageDTO.Source = "InventoryCompletedEvent";
+                            await inventoryCompletedEvent.SendMessage(messageDTO, OrchestrationQueue.OrchestrationEvent, OrchestrationExchange.OrchestrationEvent, OrchestrationRoutingKey.OrchestrationEvent);
                         }
                     }
                     break;
 
-                case "OrderErrorCommand":
+                case "InventoryErrorCommand":
                     using (var scope = _scopeFactory.CreateScope())
                     {
-                        var orderService = scope.ServiceProvider.GetService<IOrderService>();
-                        if (orderService != null)
+                        var productService = scope.ServiceProvider.GetService<IProductService>();
+                        if (productService != null)
                         {
-                            var order = JsonConvert.DeserializeObject<Core.Entities.Order>(messageDTO.Data);
+                            var order = JsonConvert.DeserializeObject<OrderDTO>(messageDTO.Data);
                             if (order != null!)
                             {
-                                order.Update("Cancel");
-                                await orderService.UpdateOrder(order);
+                                await productService.RollBackProduct(order);
                             }
-                            OrderUpdateCompletedEvent notificationEvent1 = new OrderUpdateCompletedEvent(_configuration);
-                            messageDTO.Source = "OrderUpdateCompletedEvent";
-                            await notificationEvent1.SendMessage(messageDTO, notificationEvent1.Queue, notificationEvent1.Exchange, notificationEvent1.RoutingKey);
+                            InventoryErrorEvent inventoryErrorEvent = new InventoryErrorEvent(_configuration);
+                            messageDTO.Source = "InventoryErrorEvent";
+                            await inventoryErrorEvent.SendMessage(messageDTO, OrchestrationQueue.OrchestrationErrorEvent, OrchestrationExchange.OrchestrationErrorEvent, OrchestrationRoutingKey.OrchestrationErrorEvent);
                         }
                     }
                     break;

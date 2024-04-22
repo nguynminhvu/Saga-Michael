@@ -1,4 +1,7 @@
-﻿namespace SagaPatternMichael.Product.Infrastructure.Core.Entities;
+﻿using System;
+using System.Collections.Generic;
+
+namespace SagaPatternMichael.Product.Infrastructure.Core.Entities;
 
 public partial class Product
 {

@@ -1,9 +1,9 @@
 ﻿
 namespace SagaPatternMichael.Order.RabbitMQ.Events
 {
-    public class NotificationEvent:MessageSupport
+    public class OrderUpdateCompletedEvent:MessageSupport
     {
-        public NotificationEvent(IConfiguration configuration) : base(configuration)
+        public OrderUpdateCompletedEvent(IConfiguration configuration) : base(configuration)
         {
         }
 

@@ -1,4 +1,5 @@
-﻿using SagaPatternMichael.Payment.Infrastructure.Core.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using SagaPatternMichael.Payment.Infrastructure.Core.Entities;
 using SagaPatternMichael.Payment.Infrastructure.DTOs;
 
 namespace SagaPatternMichael.Payment.Infrastructure.Services
@@ -6,6 +7,9 @@ namespace SagaPatternMichael.Payment.Infrastructure.Services
     public interface IPaymentService
     {
         Task Payment(OrderDTO orderDTO);
+        Task<List<EventBox>> GetEvents();
+        Task AddEvent(EventBox eventBox);
+        Task RemoveEvent(EventBox eventBox);
     }
 
     public class PaymentService : IPaymentService
@@ -16,6 +20,16 @@ namespace SagaPatternMichael.Payment.Infrastructure.Services
         {
             _context = paymentServiceContext;
         }
+
+        public async Task AddEvent(EventBox eventBox)
+        {
+            await _context.EventBoxes.AddAsync(eventBox);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<List<EventBox>> GetEvents()
+         => await _context.EventBoxes.ToListAsync();
+
         public async Task Payment(OrderDTO orderDTO)
         {
             if (orderDTO == null!) throw new Exception("OrderDTO null!");
@@ -27,6 +41,12 @@ namespace SagaPatternMichael.Payment.Infrastructure.Services
                 ModifiedOn = DateTime.Now
             };
             await _context.Payments.AddAsync(payment);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task RemoveEvent(EventBox eventBox)
+        {
+            _context.EventBoxes.Remove(eventBox);
             await _context.SaveChangesAsync();
         }
     }

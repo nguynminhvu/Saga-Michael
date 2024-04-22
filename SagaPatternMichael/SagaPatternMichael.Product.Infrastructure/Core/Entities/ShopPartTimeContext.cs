@@ -17,6 +17,10 @@ public partial class ShopPartTimeContext : DbContext
 
     public virtual DbSet<Category> Categories { get; set; }
 
+    public virtual DbSet<EventBox> EventBoxes { get; set; }
+
+    public virtual DbSet<EventErrorBox> EventErrorBoxes { get; set; }
+
     public virtual DbSet<Product> Products { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -27,6 +31,24 @@ public partial class ShopPartTimeContext : DbContext
         modelBuilder.Entity<Category>(entity =>
         {
             entity.Property(e => e.Id).ValueGeneratedNever();
+        });
+
+        modelBuilder.Entity<EventBox>(entity =>
+        {
+            entity.ToTable("EventBox");
+
+            entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.CreatedOn).HasColumnType("datetime");
+            entity.Property(e => e.ModifiedOn).HasColumnType("datetime");
+        });
+
+        modelBuilder.Entity<EventErrorBox>(entity =>
+        {
+            entity.ToTable("EventErrorBox");
+
+            entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.CreatedOn).HasColumnType("datetime");
+            entity.Property(e => e.ModifiedOn).HasColumnType("datetime");
         });
 
         modelBuilder.Entity<Product>(entity =>
