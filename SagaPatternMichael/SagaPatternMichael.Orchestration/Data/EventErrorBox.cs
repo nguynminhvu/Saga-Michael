@@ -9,7 +9,10 @@ public partial class EventErrorBox
     public DateTime ModifiedOn { get; set; }
 
     public DateTime CreatedOn { get; set; }
-
+    public EventErrorBox()
+    {
+        
+    }
     protected EventErrorBox(Guid id, string data, DateTime modifiedon, DateTime createdon)
     {
         Id = id;

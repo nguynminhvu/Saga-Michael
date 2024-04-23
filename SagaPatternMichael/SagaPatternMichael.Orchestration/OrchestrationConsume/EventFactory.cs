@@ -20,6 +20,7 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
             _scopeFactory = serviceScopeFactory;
         }
 
+        // This orchestration has the nature of calling and ordering the next step, remember it fuck you
         private async Task CommandHandler(MessageDTO messageDTO)
         {
             switch (messageDTO.Source)

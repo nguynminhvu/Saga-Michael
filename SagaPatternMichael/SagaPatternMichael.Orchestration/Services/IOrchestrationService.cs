@@ -22,7 +22,7 @@ namespace SagaPatternMichael.Orchestration.Services
         }
         public async Task AddMsg(EventBox eventBox)
         {
-            await _context.AddAsync(eventBox);
+            await _context.EventBoxes.AddAsync(eventBox);
             await _context.SaveChangesAsync();
         }
 

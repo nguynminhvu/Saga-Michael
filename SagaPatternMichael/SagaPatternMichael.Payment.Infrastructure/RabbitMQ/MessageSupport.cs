@@ -19,7 +19,7 @@ namespace SagaPatternMichael.Payment.Infrastructure.RabbitMQ
         }
         private void InitBroker(MessageChannel messageChannel)
         {
-            if (!_connection.IsOpen)
+            if (_connection == null! || !_connection.IsOpen)
             {
                 GetConnection(_configuration, messageChannel.Queue, messageChannel.Exchange, messageChannel.RoutingKey);
             }

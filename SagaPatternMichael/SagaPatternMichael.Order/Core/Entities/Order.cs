@@ -23,6 +23,7 @@ public partial class Order
     {
         Id = Guid.NewGuid();
         Amount = amount;
+        Status = status;
         CreatedOn = createdOn;
         ModifiedOn = modifiedOn;
     }

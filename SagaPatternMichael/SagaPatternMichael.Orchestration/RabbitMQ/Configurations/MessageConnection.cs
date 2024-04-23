@@ -8,6 +8,10 @@ namespace SagaPatternMichael.Orchestration.RabbitMQ.Configurations
     {
         protected IConnection _connection;
         protected IModel _channel;
+        public abstract string Queue { get; }
+        public abstract string Exchange { get; }
+        public abstract string RoutingKey { get; }
+
         public IModel GetConnectionMsg(IConfiguration configuration, string queueName, string exchangeName, string routingKey)
         {
             try

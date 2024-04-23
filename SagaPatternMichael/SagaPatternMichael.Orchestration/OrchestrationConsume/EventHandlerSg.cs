@@ -6,10 +6,12 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using SagaPatternMichael.Orchestration.Data;
 using SagaPatternMichael.Orchestration.EnumEvents;
+using SagaPatternMichael.Orchestration.Helpers;
 using SagaPatternMichael.Orchestration.Models;
 using SagaPatternMichael.Orchestration.RabbitMQ.Configurations;
 using SagaPatternMichael.Orchestration.Services;
 using System.Text;
+using System.Threading.Channels;
 
 namespace SagaPatternMichael.Orchestration.OrchestrationConsume
 {
@@ -21,12 +23,12 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
         private readonly MessageConnection _messageConnection;
         private IModel _channel;
 
-        public EventHandlerSg(MessageConnection messageConnection, IConfiguration configuration, IServiceScopeFactory serviceScopeFactory, EventFactory eventFactory)
+        public EventHandlerSg( IConfiguration configuration, IServiceScopeFactory serviceScopeFactory, EventFactory eventFactory)
         {
             _eventFactory = eventFactory;
             _serviceScope = serviceScopeFactory;
             _configuration = configuration;
-            _messageConnection = messageConnection;
+            _messageConnection = new MessageSupport(_configuration);
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -50,9 +52,11 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
                             await _orchestrationService.AddMsg(EventBox.Create(JsonConvert.SerializeObject(msgDTO)));
                             _eventFactory.StartOustandingEvent();
                         }
+                        _channel.BasicAck(args.DeliveryTag, false);
                     }
                 }
             };
+            _channel.BasicConsume(OrchestrationQueue.OrchestrationEvent, false, consumer);
             await Task.CompletedTask;
         }
     }

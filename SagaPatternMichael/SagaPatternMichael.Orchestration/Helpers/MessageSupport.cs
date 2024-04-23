@@ -7,12 +7,16 @@ using System.Text;
 
 namespace SagaPatternMichael.Orchestration.Helpers
 {
-    public abstract class MessageSupport : MessageConnection
+    public  class MessageSupport : MessageConnection
     {
         private readonly IConfiguration _configuration;
-        public abstract string Queue { get; }
-        public abstract string Exchange { get; }
-        public abstract string RoutingKey { get; }
+
+        public override string Queue => throw new NotImplementedException();
+
+        public override string Exchange => throw new NotImplementedException();
+
+        public override string RoutingKey => throw new NotImplementedException();
+
 
         public MessageSupport(IConfiguration configuration)
         {
@@ -21,7 +25,7 @@ namespace SagaPatternMichael.Orchestration.Helpers
 
         protected override void InitBroker(MessageChannel messageChannel)
         {
-            if (!_connection.IsOpen)
+            if (_connection==null!||!_connection.IsOpen)
             {
                 base.GetConnectionMsg(_configuration, messageChannel.QueueName, messageChannel.ExchangeName, messageChannel.RoutingKey);
             }

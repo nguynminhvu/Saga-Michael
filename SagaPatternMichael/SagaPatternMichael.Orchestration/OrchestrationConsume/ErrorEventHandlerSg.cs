@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using SagaPatternMichael.Orchestration.EnumEvents;
+using SagaPatternMichael.Orchestration.Helpers;
 using SagaPatternMichael.Orchestration.Models;
 using SagaPatternMichael.Orchestration.RabbitMQ.Configurations;
 using SagaPatternMichael.Orchestration.Services;
@@ -20,12 +21,12 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
         private readonly MessageConnection _messageConnection;
         private IModel _channel;
 
-        public ErrorEventHandlerSg(MessageConnection messageConnection, IConfiguration configuration, IServiceScopeFactory serviceScopeFactory, EventErrorFactory eventFactory)
+        public ErrorEventHandlerSg( IConfiguration configuration, IServiceScopeFactory serviceScopeFactory, EventErrorFactory eventFactory)
         {
             _eventFactory = eventFactory;
             _scopeFactory = serviceScopeFactory;
             _configuration = configuration;
-            _messageConnection = messageConnection;
+            _messageConnection = new MessageSupport(_configuration);
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)

@@ -5,8 +5,6 @@ namespace SagaPatternMichael.Orchestration.Errors.Checkouts
 {
     public class InventoryErrorCommand : MessageSupport
     {
-        private readonly MessageSupport _messageSupport;
-
         public InventoryErrorCommand(IConfiguration configuration) : base(configuration)
         {
         }

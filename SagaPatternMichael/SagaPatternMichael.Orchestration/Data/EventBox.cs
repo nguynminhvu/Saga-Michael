@@ -12,6 +12,10 @@ public  class EventBox
     public DateTime ModifiedOn { get; set; }
 
     public DateTime CreatedOn { get; set; }
+    public EventBox()
+    {
+        
+    }
     protected EventBox(Guid id, string data, DateTime modifiedon, DateTime createdon)
     {
         Id = id;
