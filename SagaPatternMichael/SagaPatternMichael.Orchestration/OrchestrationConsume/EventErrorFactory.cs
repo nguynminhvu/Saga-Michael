@@ -32,7 +32,8 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
                 case "OrderErrorEvent":
                     NotificationEvent notificationEvent = new NotificationEvent(_configuration);
                     messageDTO.Source = "NotificationEvent";
-                    await notificationEvent.SendMessage(messageDTO, notificationEvent.Queue, notificationEvent.Exchange, notificationEvent.RoutingKey);
+                    // Now I don't need notification
+                   // await notificationEvent.SendMessage(messageDTO, notificationEvent.Queue, notificationEvent.Exchange, notificationEvent.RoutingKey);
                     break;
 
                 case "InventoryErrorEvent":
@@ -75,9 +76,9 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
                     using var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(_cancellationTokenSource.Token, cancellationToken);
                     try
                     {
-                        await Task.Delay(Timeout.Infinite, cancellationToken);
+                        await Task.Delay(Timeout.Infinite, linkedCts.Token);
                     }
-                    catch
+                    catch(OperationCanceledException)
                     {
                         if (_cancellationTokenSource.Token.IsCancellationRequested)
                         {

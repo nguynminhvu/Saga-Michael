@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using SagaPatternMichael.Payment.DTOs;
 using SagaPatternMichael.Payment.Infrastructure.DTOs;
 using SagaPatternMichael.Payment.Infrastructure.RabbitMQ.Events;
+using SagaPatternMichael.Payment.Infrastructure.RabbitMQ.Events.Errors;
 using SagaPatternMichael.Payment.Infrastructure.Services;
 
 namespace SagaPatternMichael.Payment.Infrastructure.RabbitMQ
@@ -84,25 +85,36 @@ namespace SagaPatternMichael.Payment.Infrastructure.RabbitMQ
 
         private async Task CommanHandler(MessageDTO messageDTO)
         {
-            switch (messageDTO.Source)
+            try
             {
-                case "PaymentCompletedCommand":
-                    using (var scope = _scopeFactory.CreateScope())
-                    {
-                        var paymentService = scope.ServiceProvider.GetService<IPaymentService>();
-                        if (paymentService != null)
+                switch (messageDTO.Source)
+                {
+                    case "PaymentCompletedCommand":
+                        using (var scope = _scopeFactory.CreateScope())
                         {
-                            var order = JsonConvert.DeserializeObject<OrderDTO>(messageDTO.Data);
-                            if (order != null!)
+                            var paymentService = scope.ServiceProvider.GetService<IPaymentService>();
+                            if (paymentService != null)
                             {
-                                await paymentService.Payment(order);
+                                var order = JsonConvert.DeserializeObject<OrderDTO>(messageDTO.Data);
+                                if (order != null!)
+                                {
+                                    await paymentService.Payment(order);
+                                    //await paymentService.Payment(null!);
+                                }
+                                PaymentCompletedEvent paymentCompletedEvent = new PaymentCompletedEvent(_configuration);
+                                messageDTO.Source = "PaymentCompletedEvent";
+                                await paymentCompletedEvent.SendMessage(messageDTO, OrchestrationQueue.OrchestrationEvent, OrchestrationExchange.OrchestrationEvent, OrchestrationRoutingKey.OrchestrationEvent);
                             }
-                            PaymentCompletedEvent paymentCompletedEvent = new PaymentCompletedEvent(_configuration);
-                            messageDTO.Source = "PaymentCompletedEvent";
-                            await paymentCompletedEvent.SendMessage(messageDTO, OrchestrationQueue.OrchestrationEvent, OrchestrationExchange.OrchestrationEvent, OrchestrationRoutingKey.OrchestrationEvent);
                         }
-                    }
-                    break;
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                PaymentErrorEvent paymentErrorEvent = new PaymentErrorEvent(_configuration);
+                messageDTO.Source = "PaymentErrorEvent";
+                await paymentErrorEvent.SendMessage(messageDTO, OrchestrationQueue.OrchestrationErrorEvent, OrchestrationExchange.OrchestrationErrorEvent, OrchestrationRoutingKey.OrchestrationErrorEvent);
+
             }
         }
     }

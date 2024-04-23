@@ -3,155 +3,203 @@
   "WorkspaceRootPath": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\rabbitmq\\consumes\\paymentcompletedeventconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\rabbitmq\\consumes\\paymentcompletedeventconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\consumes\\inventorycompletedcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\consumes\\inventorycompletedcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\rabbitmq\\commands\\paymentcompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\rabbitmq\\commands\\paymentcompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration\\events\\checkouts\\paymentcompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\events\\checkouts\\paymentcompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration\\events\\checkouts\\ordercompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\events\\checkouts\\ordercompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\rabbitmq\\events\\consumes\\paymentcompletedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\rabbitmq\\events\\consumes\\paymentcompletedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\rabbitmq\\events\\paymentcompletedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\rabbitmq\\events\\paymentcompletedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\events\\consumes\\inventorycompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\events\\consumes\\inventorycompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\rabbitmq\\consumes\\paymentcompletedcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\rabbitmq\\consumes\\paymentcompletedcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\rabbitmq\\messageeventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\rabbitmq\\messageeventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\rabbitmq\\messageeventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\rabbitmq\\messageeventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\messageeventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\messageeventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DBDF6EF6-AEEB-4584-B91C-34DC82217D83}|SagaPatternMichael.Payment\\SagaPatternMichael.Payment.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DBDF6EF6-AEEB-4584-B91C-34DC82217D83}|SagaPatternMichael.Payment\\SagaPatternMichael.Payment.csproj|solutionrelative:sagapatternmichael.payment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\rabbitmq\\consumes\\ordererrorcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\rabbitmq\\consumes\\ordererrorcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\consumes\\inventoryerrorcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\consumes\\inventoryerrorcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.order\\rabbitmq\\messageeventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\rabbitmq\\messageeventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product.infrastructure\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{322EE85F-98E3-49AA-8F88-2B03BB39C66E}|SagaPatternMichael.Product\\SagaPatternMichael.Product.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{322EE85F-98E3-49AA-8F88-2B03BB39C66E}|SagaPatternMichael.Product\\SagaPatternMichael.Product.csproj|solutionrelative:sagapatternmichael.product\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration\\orchestrationconsume\\eventhandlersg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\orchestrationconsume\\eventhandlersg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product.infrastructure\\eventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\eventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD0FE407-7931-4D15-A7A6-CD7E2E9CC093}|SagaPatternMichael.Orchestration.API\\SagaPatternMichael.Orchestration.API.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD0FE407-7931-4D15-A7A6-CD7E2E9CC093}|SagaPatternMichael.Orchestration.API\\SagaPatternMichael.Orchestration.API.csproj|solutionrelative:sagapatternmichael.orchestration.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{322EE85F-98E3-49AA-8F88-2B03BB39C66E}|SagaPatternMichael.Product\\SagaPatternMichael.Product.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product\\sagapatternmichael.product.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{322EE85F-98E3-49AA-8F88-2B03BB39C66E}|SagaPatternMichael.Product\\SagaPatternMichael.Product.csproj|solutionrelative:sagapatternmichael.product\\sagapatternmichael.product.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration\\orchestrationconsume\\erroreventhandlersg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.orchestration\\orchestrationconsume\\erroreventhandlersg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\orchestrationconsume\\erroreventhandlersg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration\\orchestrationconsume\\eventerrorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\rabbitmq\\events\\ordererrorevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\rabbitmq\\events\\ordererrorevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration\\errors\\checkouts\\ordererrorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\errors\\checkouts\\ordererrorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\consumes\\inventoryerrorcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\consumes\\inventoryerrorcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\sagapatternmichael.payment.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\sagapatternmichael.payment.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\rabbitmq\\events\\consumes\\ordererrorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\rabbitmq\\events\\consumes\\ordererrorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration\\errors\\checkouts\\inventoryerrorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\errors\\checkouts\\inventoryerrorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration\\errors\\checkouts\\paymenterrorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\errors\\checkouts\\paymenterrorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.orchestration\\events\\checkouts\\ordercompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\events\\checkouts\\ordercompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\rabbitmq\\events\\consumes\\ordercompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\rabbitmq\\events\\consumes\\ordercompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\rabbitmq\\consumes\\ordercompletedcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\rabbitmq\\consumes\\ordercompletedcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\events\\consumes\\inventorycompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\events\\consumes\\inventorycompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\rabbitmq\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\rabbitmq\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.orchestration\\orchestrationconsume\\eventerrorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\orchestrationconsume\\eventerrorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\events\\consumes\\inventoryerrorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\events\\consumes\\inventoryerrorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration\\orchestrationconsume\\eventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\orchestrationconsume\\eventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\events\\inventorycompletedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\events\\inventorycompletedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD0FE407-7931-4D15-A7A6-CD7E2E9CC093}|SagaPatternMichael.Orchestration.API\\SagaPatternMichael.Orchestration.API.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.orchestration.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD0FE407-7931-4D15-A7A6-CD7E2E9CC093}|SagaPatternMichael.Orchestration.API\\SagaPatternMichael.Orchestration.API.csproj|solutionrelative:sagapatternmichael.orchestration.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration\\services\\iorchestrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\services\\iorchestrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\rabbitmq\\events\\errors\\paymenterrorevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\rabbitmq\\events\\errors\\paymenterrorevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration\\helpers\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\helpers\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\dtos\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\dtos\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\services\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\services\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\rabbitmq\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.payment.infrastructure\\rabbitmq\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\rabbitmq\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\rabbitmq\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\rabbitmq\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\events\\errors\\inventoryerrorevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\events\\errors\\inventoryerrorevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\events\\inventorycompletedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\events\\inventorycompletedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.orchestration\\rabbitmq\\configurations\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\rabbitmq\\configurations\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.product.infrastructure\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\rabbitmq\\events\\consumes\\paymentcompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\rabbitmq\\events\\consumes\\paymentcompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\consumes\\inventorycompletedcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\consumes\\inventorycompletedcommandconsume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.order\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\core\\entities\\eventbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.order\\rabbitmq\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09D3F7C0-4F21-429B-AC30-924F3DD0A747}|SagaPatternMichael.Order\\SagaPatternMichael.Order.csproj|solutionrelative:sagapatternmichael.order\\rabbitmq\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DBDF6EF6-AEEB-4584-B91C-34DC82217D83}|SagaPatternMichael.Payment\\SagaPatternMichael.Payment.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.payment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DBDF6EF6-AEEB-4584-B91C-34DC82217D83}|SagaPatternMichael.Payment\\SagaPatternMichael.Payment.csproj|solutionrelative:sagapatternmichael.payment\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.orchestration\\services\\iorchestrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\services\\iorchestrationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.orchestration\\events\\checkouts\\paymentcompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\events\\checkouts\\paymentcompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.payment.infrastructure\\rabbitmq\\events\\paymentcompletedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\rabbitmq\\events\\paymentcompletedevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{322EE85F-98E3-49AA-8F88-2B03BB39C66E}|SagaPatternMichael.Product\\SagaPatternMichael.Product.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.product\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{322EE85F-98E3-49AA-8F88-2B03BB39C66E}|SagaPatternMichael.Product\\SagaPatternMichael.Product.csproj|solutionrelative:sagapatternmichael.product\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.orchestration\\orchestrationconsume\\eventhandlersg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\orchestrationconsume\\eventhandlersg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.product.infrastructure\\eventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\eventfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{322EE85F-98E3-49AA-8F88-2B03BB39C66E}|SagaPatternMichael.Product\\SagaPatternMichael.Product.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.product\\sagapatternmichael.product.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{322EE85F-98E3-49AA-8F88-2B03BB39C66E}|SagaPatternMichael.Product\\SagaPatternMichael.Product.csproj|solutionrelative:sagapatternmichael.product\\sagapatternmichael.product.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.product.infrastructure\\rabbitmq\\events\\consumes\\inventoryerrorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8619B14E-8075-48CC-AF5B-80BE9E886749}|SagaPatternMichael.Product.Infrastructure\\SagaPatternMichael.Product.Infrastructure.csproj|solutionrelative:sagapatternmichael.product.infrastructure\\rabbitmq\\events\\consumes\\inventoryerrorcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.orchestration\\helpers\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\helpers\\messagesupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.payment.infrastructure\\dtos\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\dtos\\messagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.payment.infrastructure\\services\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\services\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.payment.infrastructure\\rabbitmq\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\rabbitmq\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.orchestration\\rabbitmq\\configurations\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD8F7091-C4EF-4613-A098-6CADABA84A10}|SagaPatternMichael.Orchestration\\SagaPatternMichael.Orchestration.csproj|solutionrelative:sagapatternmichael.orchestration\\rabbitmq\\configurations\\messageconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.payment.infrastructure\\rabbitmq\\events\\consumes\\paymentcompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\rabbitmq\\events\\consumes\\paymentcompletedcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.payment.infrastructure\\core\\entities\\eventbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\core\\entities\\eventbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\core\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.payment.infrastructure\\core\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\core\\entities\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|d:\\code fun\\c#\\web\\saga-michael\\sagapatternmichael\\sagapatternmichael.payment.infrastructure\\core\\entities\\paymentservicecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\sagapatternmichael.payment.infrastructure\\core\\entities\\paymentservicecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BD28536-3073-4BC8-8B6B-60B54954E671}|SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj|solutionrelative:sagapatternmichael.payment.infrastructure\\core\\entities\\paymentservicecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -162,33 +210,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InventoryCompletedCommandConsume.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryCompletedCommandConsume.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryCompletedCommandConsume.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryCompletedCommandConsume.cs",
-              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryCompletedCommandConsume.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAA1wDcAAAAVAAAA",
+              "DocumentIndex": 15,
+              "Title": "OrderCompletedCommandConsume.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Consumes\\OrderCompletedCommandConsume.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\RabbitMQ\\Consumes\\OrderCompletedCommandConsume.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Consumes\\OrderCompletedCommandConsume.cs",
+              "RelativeToolTip": "SagaPatternMichael.Order\\RabbitMQ\\Consumes\\OrderCompletedCommandConsume.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAApwCEAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:20:22.129Z",
+              "WhenOpened": "2024-04-23T10:08:43.293Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrderCompletedCommand.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Events\\Checkouts\\OrderCompletedCommand.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\Events\\Checkouts\\OrderCompletedCommand.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Events\\Checkouts\\OrderCompletedCommand.cs",
-              "RelativeToolTip": "SagaPatternMichael.Orchestration\\Events\\Checkouts\\OrderCompletedCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "MessageEventFactory.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
+              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAcwGkAAABqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T10:13:51.805Z",
+              "WhenOpened": "2024-04-23T16:21:51.192Z",
               "EditorCaption": ""
             },
             {
@@ -197,72 +245,189 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PaymentCompletedCommand.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Events\\Checkouts\\PaymentCompletedCommand.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\Events\\Checkouts\\PaymentCompletedCommand.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Events\\Checkouts\\PaymentCompletedCommand.cs",
-              "RelativeToolTip": "SagaPatternMichael.Orchestration\\Events\\Checkouts\\PaymentCompletedCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:48:32.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PaymentCompletedCommand.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Commands\\PaymentCompletedCommand.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\RabbitMQ\\Commands\\PaymentCompletedCommand.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Commands\\PaymentCompletedCommand.cs",
-              "RelativeToolTip": "SagaPatternMichael.Order\\RabbitMQ\\Commands\\PaymentCompletedCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "OrderErrorCommandConsume.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Consumes\\OrderErrorCommandConsume.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\RabbitMQ\\Consumes\\OrderErrorCommandConsume.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Consumes\\OrderErrorCommandConsume.cs",
+              "RelativeToolTip": "SagaPatternMichael.Order\\RabbitMQ\\Consumes\\OrderErrorCommandConsume.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAABoAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T10:04:14.951Z",
+              "WhenOpened": "2024-04-23T14:38:55.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PaymentCompletedEventConsume.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Consumes\\PaymentCompletedEventConsume.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\RabbitMQ\\Consumes\\PaymentCompletedEventConsume.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Consumes\\PaymentCompletedEventConsume.cs",
-              "RelativeToolTip": "SagaPatternMichael.Order\\RabbitMQ\\Consumes\\PaymentCompletedEventConsume.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwCkAAABAAAAA",
+              "DocumentIndex": 3,
+              "Title": "MessageEventFactory.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\MessageEventFactory.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\RabbitMQ\\MessageEventFactory.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\MessageEventFactory.cs",
+              "RelativeToolTip": "SagaPatternMichael.Order\\RabbitMQ\\MessageEventFactory.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAIAwwE8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T10:08:43.293Z",
+              "WhenOpened": "2024-04-23T08:24:32.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SagaPatternMichael.Payment.Infrastructure",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj",
+              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\SagaPatternMichael.Payment.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-23T14:44:26.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MessageEventFactory.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
+              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAhwGwAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T14:04:25.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ErrorEventHandlerSg.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\OrchestrationConsume\\ErrorEventHandlerSg.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\OrchestrationConsume\\ErrorEventHandlerSg.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\OrchestrationConsume\\ErrorEventHandlerSg.cs",
+              "RelativeToolTip": "SagaPatternMichael.Orchestration\\OrchestrationConsume\\ErrorEventHandlerSg.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAxwCcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:14:00.751Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PaymentCompletedEvent.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Events\\Consumes\\PaymentCompletedEvent.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\RabbitMQ\\Events\\Consumes\\PaymentCompletedEvent.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Events\\Consumes\\PaymentCompletedEvent.cs",
-              "RelativeToolTip": "SagaPatternMichael.Order\\RabbitMQ\\Events\\Consumes\\PaymentCompletedEvent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABNAAAA",
+              "Title": "OrderErrorEvent.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Events\\OrderErrorEvent.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\RabbitMQ\\Events\\OrderErrorEvent.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Events\\OrderErrorEvent.cs",
+              "RelativeToolTip": "SagaPatternMichael.Order\\RabbitMQ\\Events\\OrderErrorEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T12:38:38.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InventoryErrorCommandConsume.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryErrorCommandConsume.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryErrorCommandConsume.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryErrorCommandConsume.cs",
+              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryErrorCommandConsume.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAhwC0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:37:41.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderErrorCommand.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Errors\\Checkouts\\OrderErrorCommand.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\Errors\\Checkouts\\OrderErrorCommand.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Errors\\Checkouts\\OrderErrorCommand.cs",
+              "RelativeToolTip": "SagaPatternMichael.Orchestration\\Errors\\Checkouts\\OrderErrorCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T14:36:56.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\Program.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\Program.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\Program.cs",
+              "RelativeToolTip": "SagaPatternMichael.Order\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T13:14:04.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderErrorCommand.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Events\\Consumes\\OrderErrorCommand.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\RabbitMQ\\Events\\Consumes\\OrderErrorCommand.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Events\\Consumes\\OrderErrorCommand.cs",
+              "RelativeToolTip": "SagaPatternMichael.Order\\RabbitMQ\\Events\\Consumes\\OrderErrorCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T14:36:32.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PaymentErrorCommand.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Errors\\Checkouts\\PaymentErrorCommand.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\Errors\\Checkouts\\PaymentErrorCommand.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Errors\\Checkouts\\PaymentErrorCommand.cs",
+              "RelativeToolTip": "SagaPatternMichael.Orchestration\\Errors\\Checkouts\\PaymentErrorCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T14:38:01.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderCompletedCommand.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Events\\Checkouts\\OrderCompletedCommand.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\Events\\Checkouts\\OrderCompletedCommand.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Events\\Checkouts\\OrderCompletedCommand.cs",
+              "RelativeToolTip": "SagaPatternMichael.Orchestration\\Events\\Checkouts\\OrderCompletedCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T10:13:51.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "InventoryErrorCommand.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Errors\\Checkouts\\InventoryErrorCommand.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\Errors\\Checkouts\\InventoryErrorCommand.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Errors\\Checkouts\\InventoryErrorCommand.cs",
+              "RelativeToolTip": "SagaPatternMichael.Orchestration\\Errors\\Checkouts\\InventoryErrorCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T14:06:46.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderCompletedCommand.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Events\\Consumes\\OrderCompletedCommand.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\RabbitMQ\\Events\\Consumes\\OrderCompletedCommand.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\Events\\Consumes\\OrderCompletedCommand.cs",
+              "RelativeToolTip": "SagaPatternMichael.Order\\RabbitMQ\\Events\\Consumes\\OrderCompletedCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T10:05:47.383Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PaymentCompletedEvent.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\PaymentCompletedEvent.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\PaymentCompletedEvent.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\PaymentCompletedEvent.cs",
-              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\PaymentCompletedEvent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T10:11:52.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "InventoryCompletedCommand.cs",
               "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Consumes\\InventoryCompletedCommand.cs",
               "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Consumes\\InventoryCompletedCommand.cs",
@@ -275,208 +440,130 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PaymentCompletedCommandConsume.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Consumes\\PaymentCompletedCommandConsume.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Consumes\\PaymentCompletedCommandConsume.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Consumes\\PaymentCompletedCommandConsume.cs",
-              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Consumes\\PaymentCompletedCommandConsume.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAiwCoAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:49:21.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MessageEventFactory.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
-              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAIAwwGMAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:47:57.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MessageEventFactory.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\MessageEventFactory.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\RabbitMQ\\MessageEventFactory.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\MessageEventFactory.cs",
-              "RelativeToolTip": "SagaPatternMichael.Order\\RabbitMQ\\MessageEventFactory.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAcwDoAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T08:24:32.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "InventoryErrorCommandConsume.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryErrorCommandConsume.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryErrorCommandConsume.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryErrorCommandConsume.cs",
-              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryErrorCommandConsume.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAhwBcAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:37:41.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment\\Program.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Payment\\Program.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment\\Program.cs",
-              "RelativeToolTip": "SagaPatternMichael.Payment\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:58:04.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration.API\\Program.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration.API\\Program.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration.API\\Program.cs",
-              "RelativeToolTip": "SagaPatternMichael.Orchestration.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:59:53.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MessageSupport.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageSupport.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageSupport.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageSupport.cs",
-              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageSupport.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAiwDEAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T08:05:31.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IProductService.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\Services\\IProductService.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\Services\\IProductService.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\Services\\IProductService.cs",
-              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\Services\\IProductService.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAADgv1kAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:38:55.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product\\Program.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Product\\Program.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product\\Program.cs",
-              "RelativeToolTip": "SagaPatternMichael.Product\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:57:02.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "EventHandlerSg.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventHandlerSg.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventHandlerSg.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventHandlerSg.cs",
-              "RelativeToolTip": "SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventHandlerSg.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAUwB4AAABEAAAA",
+              "Title": "MessageSupport.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\MessageSupport.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\RabbitMQ\\MessageSupport.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\MessageSupport.cs",
+              "RelativeToolTip": "SagaPatternMichael.Order\\RabbitMQ\\MessageSupport.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAArwB0AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:33:52.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SagaPatternMichael.Product.http",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product\\SagaPatternMichael.Product.http",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Product\\SagaPatternMichael.Product.http",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product\\SagaPatternMichael.Product.http",
-              "RelativeToolTip": "SagaPatternMichael.Product\\SagaPatternMichael.Product.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-04-23T09:16:29.509Z",
+              "WhenOpened": "2024-04-23T13:16:14.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "EventFactory.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\EventFactory.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\EventFactory.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\EventFactory.cs",
-              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\EventFactory.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T09:42:52.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ErrorEventHandlerSg.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\OrchestrationConsume\\ErrorEventHandlerSg.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\OrchestrationConsume\\ErrorEventHandlerSg.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\OrchestrationConsume\\ErrorEventHandlerSg.cs",
-              "RelativeToolTip": "SagaPatternMichael.Orchestration\\OrchestrationConsume\\ErrorEventHandlerSg.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T08:14:00.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
               "Title": "EventErrorFactory.cs",
               "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventErrorFactory.cs",
               "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventErrorFactory.cs",
               "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventErrorFactory.cs",
               "RelativeToolTip": "SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventErrorFactory.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwCIAAAA3AAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAADgvygAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T07:08:10.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "InventoryErrorCommand.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Consumes\\InventoryErrorCommand.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Consumes\\InventoryErrorCommand.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Consumes\\InventoryErrorCommand.cs",
-              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Consumes\\InventoryErrorCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
+              "DocumentIndex": 19,
+              "Title": "EventFactory.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventFactory.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventFactory.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventFactory.cs",
+              "RelativeToolTip": "SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventFactory.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwFEAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:37:07.781Z",
+              "WhenOpened": "2024-04-23T12:38:30.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration.API\\Program.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration.API\\Program.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration.API\\Program.cs",
+              "RelativeToolTip": "SagaPatternMichael.Orchestration.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:59:53.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MessageSupport.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageSupport.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageSupport.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageSupport.cs",
+              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageSupport.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:09:46.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PaymentErrorEvent.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\Errors\\PaymentErrorEvent.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\Errors\\PaymentErrorEvent.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\Errors\\PaymentErrorEvent.cs",
+              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\Errors\\PaymentErrorEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T14:15:31.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MessageSupport.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageSupport.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageSupport.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageSupport.cs",
+              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageSupport.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:05:31.608Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
+              "Title": "InventoryErrorEvent.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Errors\\InventoryErrorEvent.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Errors\\InventoryErrorEvent.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Errors\\InventoryErrorEvent.cs",
+              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Errors\\InventoryErrorEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T14:11:21.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\Services\\IProductService.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\Services\\IProductService.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\Services\\IProductService.cs",
+              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\Services\\IProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:38:55.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "InventoryCompletedEvent.cs",
               "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\InventoryCompletedEvent.cs",
               "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\InventoryCompletedEvent.cs",
               "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\InventoryCompletedEvent.cs",
               "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\InventoryCompletedEvent.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T08:34:39.532Z",
               "EditorCaption": ""
@@ -484,84 +571,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "IPaymentService.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\Services\\IPaymentService.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\Services\\IPaymentService.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\Services\\IPaymentService.cs",
-              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\Services\\IPaymentService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Title": "InventoryCompletedCommandConsume.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryCompletedCommandConsume.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryCompletedCommandConsume.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryCompletedCommandConsume.cs",
+              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Consumes\\InventoryCompletedCommandConsume.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAgwDEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:49:55.667Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IOrchestrationService.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Services\\IOrchestrationService.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\Services\\IOrchestrationService.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Services\\IOrchestrationService.cs",
-              "RelativeToolTip": "SagaPatternMichael.Orchestration\\Services\\IOrchestrationService.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAhwBcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:54:36.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "MessageDTO.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\DTOs\\MessageDTO.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\DTOs\\MessageDTO.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\DTOs\\MessageDTO.cs",
-              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\DTOs\\MessageDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T08:24:19.406Z",
+              "WhenOpened": "2024-04-23T07:20:22.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "MessageSupport.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Helpers\\MessageSupport.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\Helpers\\MessageSupport.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Helpers\\MessageSupport.cs",
-              "RelativeToolTip": "SagaPatternMichael.Orchestration\\Helpers\\MessageSupport.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAArwCUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:18:45.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "MessageSupport.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageSupport.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageSupport.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageSupport.cs",
-              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageSupport.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T08:09:46.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "MessageConnection.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageConnection.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageConnection.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageConnection.cs",
-              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageConnection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T08:09:52.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
               "Title": "MessageConnection.cs",
               "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageConnection.cs",
               "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageConnection.cs",
@@ -574,7 +596,205 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\Services\\IOrderService.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\Services\\IOrderService.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\Services\\IOrderService.cs",
+              "RelativeToolTip": "SagaPatternMichael.Order\\Services\\IOrderService.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAqwGAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T13:47:51.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\Repositories\\IRepository.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "SagaPatternMichael.Order\\Repositories\\IRepository.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAgwFYAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:46:55.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 32,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment\\Program.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Payment\\Program.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment\\Program.cs",
+              "RelativeToolTip": "SagaPatternMichael.Payment\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:58:04.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "MessageConnection.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\MessageConnection.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\RabbitMQ\\MessageConnection.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\RabbitMQ\\MessageConnection.cs",
+              "RelativeToolTip": "SagaPatternMichael.Order\\RabbitMQ\\MessageConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T13:16:18.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IOrchestrationService.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Services\\IOrchestrationService.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\Services\\IOrchestrationService.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Services\\IOrchestrationService.cs",
+              "RelativeToolTip": "SagaPatternMichael.Orchestration\\Services\\IOrchestrationService.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAhwBcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:54:36.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PaymentCompletedEvent.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\PaymentCompletedEvent.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\PaymentCompletedEvent.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\PaymentCompletedEvent.cs",
+              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\PaymentCompletedEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T10:11:52.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PaymentCompletedCommand.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Events\\Checkouts\\PaymentCompletedCommand.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\Events\\Checkouts\\PaymentCompletedCommand.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Events\\Checkouts\\PaymentCompletedCommand.cs",
+              "RelativeToolTip": "SagaPatternMichael.Orchestration\\Events\\Checkouts\\PaymentCompletedCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:48:32.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product\\Program.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Product\\Program.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product\\Program.cs",
+              "RelativeToolTip": "SagaPatternMichael.Product\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:57:02.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "EventHandlerSg.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventHandlerSg.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventHandlerSg.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventHandlerSg.cs",
+              "RelativeToolTip": "SagaPatternMichael.Orchestration\\OrchestrationConsume\\EventHandlerSg.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAUwB4AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:33:52.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "SagaPatternMichael.Product.http",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product\\SagaPatternMichael.Product.http",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Product\\SagaPatternMichael.Product.http",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product\\SagaPatternMichael.Product.http",
+              "RelativeToolTip": "SagaPatternMichael.Product\\SagaPatternMichael.Product.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-04-23T09:16:29.509Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "EventFactory.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\EventFactory.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\EventFactory.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\EventFactory.cs",
+              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\EventFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T09:42:52.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "InventoryErrorCommand.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Consumes\\InventoryErrorCommand.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Consumes\\InventoryErrorCommand.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Consumes\\InventoryErrorCommand.cs",
+              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\Events\\Consumes\\InventoryErrorCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:37:07.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\Services\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\Services\\IPaymentService.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\Services\\IPaymentService.cs",
+              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\Services\\IPaymentService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:49:55.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "MessageDTO.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\DTOs\\MessageDTO.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\DTOs\\MessageDTO.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\DTOs\\MessageDTO.cs",
+              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\DTOs\\MessageDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:24:19.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "MessageSupport.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Helpers\\MessageSupport.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\Helpers\\MessageSupport.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\Helpers\\MessageSupport.cs",
+              "RelativeToolTip": "SagaPatternMichael.Orchestration\\Helpers\\MessageSupport.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAArwCUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T07:18:45.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "MessageConnection.cs",
+              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageConnection.cs",
+              "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageConnection.cs",
+              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageConnection.cs",
+              "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\MessageConnection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:09:52.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
               "Title": "MessageConnection.cs",
               "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Orchestration\\RabbitMQ\\Configurations\\MessageConnection.cs",
               "RelativeDocumentMoniker": "SagaPatternMichael.Orchestration\\RabbitMQ\\Configurations\\MessageConnection.cs",
@@ -582,12 +802,11 @@
               "RelativeToolTip": "SagaPatternMichael.Orchestration\\RabbitMQ\\Configurations\\MessageConnection.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T08:01:01.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T08:01:01.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 46,
               "Title": "PaymentCompletedCommand.cs",
               "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\Consumes\\PaymentCompletedCommand.cs",
               "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\Consumes\\PaymentCompletedCommand.cs",
@@ -595,25 +814,11 @@
               "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\RabbitMQ\\Events\\Consumes\\PaymentCompletedCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:48:24.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T07:48:24.085Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\Repositories\\IRepository.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Order\\Repositories\\IRepository.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Order\\Repositories\\IRepository.cs",
-              "RelativeToolTip": "SagaPatternMichael.Order\\Repositories\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:46:55.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 47,
               "Title": "EventBox.cs",
               "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\Core\\Entities\\EventBox.cs",
               "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\Core\\Entities\\EventBox.cs",
@@ -621,12 +826,11 @@
               "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\Core\\Entities\\EventBox.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:46:53.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T07:46:53.036Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 48,
               "Title": "Payment.cs",
               "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\Core\\Entities\\Payment.cs",
               "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\Core\\Entities\\Payment.cs",
@@ -634,12 +838,11 @@
               "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\Core\\Entities\\Payment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:46:51.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T07:46:51.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 49,
               "Title": "PaymentServiceContext.cs",
               "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Payment.Infrastructure\\Core\\Entities\\PaymentServiceContext.cs",
               "RelativeDocumentMoniker": "SagaPatternMichael.Payment.Infrastructure\\Core\\Entities\\PaymentServiceContext.cs",
@@ -647,42 +850,7 @@
               "RelativeToolTip": "SagaPatternMichael.Payment.Infrastructure\\Core\\Entities\\PaymentServiceContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:46:50.803Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "ae05b4b9-4e9a-40e0-b3eb-08f318ad174d",
-        "Display": 0,
-        "X": 1118,
-        "Y": 165,
-        "Width": 1187,
-        "Height": 694,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MessageEventFactory.cs",
-              "DocumentMoniker": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
-              "RelativeDocumentMoniker": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
-              "ToolTip": "D:\\Code Fun\\C#\\Web\\Saga-Michael\\SagaPatternMichael\\SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
-              "RelativeToolTip": "SagaPatternMichael.Product.Infrastructure\\RabbitMQ\\MessageEventFactory.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAIwD8AAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T07:16:52.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T07:46:50.803Z"
             }
           ]
         }

@@ -10,7 +10,7 @@ namespace SagaPatternMichael.Product.Infrastructure.RabbitMQ
 {
     public class MessageEventFactory : BackgroundService, IDisposable
     {
-        private  CancellationTokenSource _cancellationTokenSource = new();
+        private CancellationTokenSource _cancellationTokenSource = new();
         private readonly IConfiguration _configuration;
         private readonly IServiceScopeFactory _scopeFactory;
 
@@ -92,43 +92,53 @@ namespace SagaPatternMichael.Product.Infrastructure.RabbitMQ
 
         private async Task CommanHandler(MessageDTO messageDTO)
         {
-            switch (messageDTO.Source)
+            try
             {
-                case "InventoryCompletedCommand":
-                    using (var scope = _scopeFactory.CreateScope())
-                    {
-                        var productService = scope.ServiceProvider.GetService<IProductService>();
-                        if (productService != null)
+                switch (messageDTO.Source)
+                {
+                    case "InventoryCompletedCommand":
+                        using (var scope = _scopeFactory.CreateScope())
                         {
-                            var order = JsonConvert.DeserializeObject<OrderDTO>(messageDTO.Data);
-                            if (order != null!)
+                            var productService = scope.ServiceProvider.GetService<IProductService>();
+                            if (productService != null)
                             {
-                                await productService.UpdateProduct(order);
+                                var order = JsonConvert.DeserializeObject<OrderDTO>(messageDTO.Data);
+                                if (order != null!)
+                                {
+                                    await productService.UpdateProduct(order);
+                                    //await productService.UpdateProduct(null!);
+                                }
+                                InventoryCompletedEvent inventoryCompletedEvent = new InventoryCompletedEvent(_configuration);
+                                messageDTO.Source = "InventoryCompletedEvent";
+                                await inventoryCompletedEvent.SendMessage(messageDTO, OrchestrationQueue.OrchestrationEvent, OrchestrationExchange.OrchestrationEvent, OrchestrationRoutingKey.OrchestrationEvent);
                             }
-                            InventoryCompletedEvent inventoryCompletedEvent = new InventoryCompletedEvent(_configuration);
-                            messageDTO.Source = "InventoryCompletedEvent";
-                            await inventoryCompletedEvent.SendMessage(messageDTO, OrchestrationQueue.OrchestrationEvent, OrchestrationExchange.OrchestrationEvent, OrchestrationRoutingKey.OrchestrationEvent);
                         }
-                    }
-                    break;
+                        break;
 
-                case "InventoryErrorCommand":
-                    using (var scope = _scopeFactory.CreateScope())
-                    {
-                        var productService = scope.ServiceProvider.GetService<IProductService>();
-                        if (productService != null)
+                    case "InventoryErrorCommand":
+                        using (var scope = _scopeFactory.CreateScope())
                         {
-                            var order = JsonConvert.DeserializeObject<OrderDTO>(messageDTO.Data);
-                            if (order != null!)
+                            var productService = scope.ServiceProvider.GetService<IProductService>();
+                            if (productService != null)
                             {
-                                await productService.RollBackProduct(order);
+                                var order = JsonConvert.DeserializeObject<OrderDTO>(messageDTO.Data);
+                                if (order != null!)
+                                {
+                                    await productService.RollBackProduct(order);
+                                }
+                                InventoryErrorEvent inventoryErrorEvent = new InventoryErrorEvent(_configuration);
+                                messageDTO.Source = "InventoryErrorEvent";
+                                await inventoryErrorEvent.SendMessage(messageDTO, OrchestrationQueue.OrchestrationErrorEvent, OrchestrationExchange.OrchestrationErrorEvent, OrchestrationRoutingKey.OrchestrationErrorEvent);
                             }
-                            InventoryErrorEvent inventoryErrorEvent = new InventoryErrorEvent(_configuration);
-                            messageDTO.Source = "InventoryErrorEvent";
-                            await inventoryErrorEvent.SendMessage(messageDTO, OrchestrationQueue.OrchestrationErrorEvent, OrchestrationExchange.OrchestrationErrorEvent, OrchestrationRoutingKey.OrchestrationErrorEvent);
                         }
-                    }
-                    break;
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                InventoryErrorEvent inventoryErrorEvent = new InventoryErrorEvent(_configuration);
+                messageDTO.Source = "InventoryErrorEvent";
+                await inventoryErrorEvent.SendMessage(messageDTO, OrchestrationQueue.OrchestrationErrorEvent, OrchestrationExchange.OrchestrationErrorEvent, OrchestrationRoutingKey.OrchestrationErrorEvent);
             }
         }
     }

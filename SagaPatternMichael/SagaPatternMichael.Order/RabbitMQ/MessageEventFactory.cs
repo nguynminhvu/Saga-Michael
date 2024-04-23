@@ -1,7 +1,6 @@
 ﻿
 using Newtonsoft.Json;
 using SagaPatternMichael.Order.DTOs;
-using SagaPatternMichael.Order.RabbitMQ.Commands;
 using SagaPatternMichael.Order.RabbitMQ.Events;
 using SagaPatternMichael.Order.Services;
 
@@ -58,9 +57,9 @@ namespace SagaPatternMichael.Order.RabbitMQ
                     using var linkCts = CancellationTokenSource.CreateLinkedTokenSource(_cancellationTokenSource.Token, cancellationToken);
                     try
                     {
-                        await Task.Delay(Timeout.Infinite, cancellationToken);
+                        await Task.Delay(Timeout.Infinite, linkCts.Token);
                     }
-                    catch
+                    catch(OperationCanceledException)
                     {
                         if (_cancellationTokenSource.Token.IsCancellationRequested)
                         {
@@ -97,7 +96,8 @@ namespace SagaPatternMichael.Order.RabbitMQ
                             }
                             OrderUpdateCompletedEvent notificationEvent1 = new OrderUpdateCompletedEvent(_configuration);
                             messageDTO.Source = "OrderUpdateCompletedEvent";
-                            await notificationEvent1.SendMessage(messageDTO, notificationEvent1.Queue, notificationEvent1.Exchange, notificationEvent1.RoutingKey);
+                            // Now, I don't need notification, but in the future is yes
+                        //    await notificationEvent1.SendMessage(messageDTO, notificationEvent1.Queue, notificationEvent1.Exchange, notificationEvent1.RoutingKey);
                         }
                     }
                     break;
@@ -116,7 +116,9 @@ namespace SagaPatternMichael.Order.RabbitMQ
                             }
                             OrderUpdateCompletedEvent notificationEvent1 = new OrderUpdateCompletedEvent(_configuration);
                             messageDTO.Source = "OrderUpdateCompletedEvent";
-                            await notificationEvent1.SendMessage(messageDTO, notificationEvent1.Queue, notificationEvent1.Exchange, notificationEvent1.RoutingKey);
+                            // Now, I don't need notification, but in the future is yes
+
+                            // await notificationEvent1.SendMessage(messageDTO, notificationEvent1.Queue, notificationEvent1.Exchange, notificationEvent1.RoutingKey);
                         }
                     }
                     break;

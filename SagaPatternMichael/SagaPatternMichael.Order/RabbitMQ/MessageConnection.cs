@@ -6,7 +6,9 @@ namespace SagaPatternMichael.Order.RabbitMQ
     {
         protected IConnection _connection;
         protected IModel _channel;
-
+        public abstract string Queue { get; }
+        public abstract string Exchange { get; }
+        public abstract string RoutingKey { get; }
         public IModel GetConnection(IConfiguration configuration, string queueName, string exchangeName, string routingKey)
         {
             ConnectionFactory factory = new ConnectionFactory();

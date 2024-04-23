@@ -1,15 +1,11 @@
-﻿using Microsoft.Extensions.Configuration;
-using SagaPatternMichael.Orchestration.Helpers;
-using SagaPatternMichael.Orchestration.Models;
-
-namespace SagaPatternMichael.Orchestration.Errors.Checkouts
+﻿
+namespace SagaPatternMichael.Order.RabbitMQ.Events.Consumes
 {
     public class OrderErrorCommand : MessageSupport
     {
         public OrderErrorCommand(IConfiguration configuration) : base(configuration)
         {
         }
-
         public override string Queue => "OrderErrorQueue";
 
         public override string Exchange => "OrderErrorExchange";

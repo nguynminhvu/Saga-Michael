@@ -10,6 +10,7 @@ using SagaPatternMichael.Orchestration.Models;
 using SagaPatternMichael.Orchestration.RabbitMQ.Configurations;
 using SagaPatternMichael.Orchestration.Services;
 using System.Text;
+using System.Threading.Channels;
 
 namespace SagaPatternMichael.Orchestration.OrchestrationConsume
 {
@@ -49,9 +50,11 @@ namespace SagaPatternMichael.Orchestration.OrchestrationConsume
                             await _orchestrationService.AddMsgError(Data.EventErrorBox.Create(JsonConvert.SerializeObject(messageDTO)));
                             _eventFactory.StartOustandingEvent();
                         }
+                        _channel.BasicAck(args.DeliveryTag, false);
                     }
                 }
             };
+            _channel.BasicConsume(OrchestrationQueue.OrchestrationErrorEvent, false, consumer);
             await Task.CompletedTask;
         }
     }
