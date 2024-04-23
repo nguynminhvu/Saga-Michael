@@ -1,5 +1,4 @@
-﻿
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
@@ -11,7 +10,7 @@ namespace SagaPatternMichael.Product.Infrastructure.RabbitMQ
 {
     public class MessageEventFactory : BackgroundService, IDisposable
     {
-        CancellationTokenSource _cancellationTokenSource = new();
+        private  CancellationTokenSource _cancellationTokenSource = new();
         private readonly IConfiguration _configuration;
         private readonly IServiceScopeFactory _scopeFactory;
 
@@ -56,13 +55,23 @@ namespace SagaPatternMichael.Product.Infrastructure.RabbitMQ
                                 await _productService.RemoveEvent(item);
                             }
                         }
+                        var eventErrors = await _productService.GetEventErrors();
+                        foreach (var item in eventErrors)
+                        {
+                            var messageDTO = JsonConvert.DeserializeObject<MessageDTO>(item.Data);
+                            if (messageDTO != null!)
+                            {
+                                await CommanHandler(messageDTO);
+                                await _productService.RemoveEventError(item);
+                            }
+                        }
                     }
                     using var linkCts = CancellationTokenSource.CreateLinkedTokenSource(_cancellationTokenSource.Token, cancellationToken);
                     try
                     {
-                        await Task.Delay(Timeout.Infinite, cancellationToken);
+                        await Task.Delay(Timeout.Infinite, linkCts.Token);
                     }
-                    catch
+                    catch (OperationCanceledException)
                     {
                         if (_cancellationTokenSource.Token.IsCancellationRequested)
                         {

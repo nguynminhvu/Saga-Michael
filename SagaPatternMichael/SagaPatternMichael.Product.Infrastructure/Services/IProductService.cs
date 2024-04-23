@@ -8,9 +8,11 @@ namespace SagaPatternMichael.Product.Infrastructure.Services
     {
         Task UpdateProduct(OrderDTO orderDTO);
         Task<List<EventBox>> GetEvents();
-        Task<EventErrorBox> GetEventErrors();
+        Task<List<EventErrorBox>> GetEventErrors();
         Task AddEvent(EventBox eventBox);
+        Task AddEventError(EventErrorBox eventBox);
         Task RemoveEvent(EventBox eventBox);
+        Task RemoveEventError(EventErrorBox eventBox);
         Task RollBackProduct(OrderDTO orderDTO);
 
     }
@@ -30,10 +32,15 @@ namespace SagaPatternMichael.Product.Infrastructure.Services
             await _context.SaveChangesAsync();
         }
 
-        public Task<EventErrorBox> GetEventErrors()
+        public async Task AddEventError(EventErrorBox eventBox)
         {
-            throw new NotImplementedException();
+            await _context.EventErrorBoxes.AddAsync(eventBox);
+            await _context.SaveChangesAsync();
         }
+
+        public async Task<List<EventErrorBox>> GetEventErrors()
+            => await _context.EventErrorBoxes.ToListAsync();
+
 
         public async Task<List<EventBox>> GetEvents()
             => await _context.EventBoxes.ToListAsync();
@@ -41,6 +48,12 @@ namespace SagaPatternMichael.Product.Infrastructure.Services
         public async Task RemoveEvent(EventBox eventBox)
         {
             _context.EventBoxes.Remove(eventBox);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task RemoveEventError(EventErrorBox eventBox)
+        {
+            _context.EventErrorBoxes.Remove(eventBox);
             await _context.SaveChangesAsync();
         }
 

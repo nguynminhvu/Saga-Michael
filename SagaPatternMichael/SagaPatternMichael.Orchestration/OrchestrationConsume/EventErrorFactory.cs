@@ -4,15 +4,8 @@ using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using SagaPatternMichael.Orchestration.Errors.Checkouts;
 using SagaPatternMichael.Orchestration.Events;
-using SagaPatternMichael.Orchestration.Events.Checkouts;
-using SagaPatternMichael.Orchestration.Helpers;
 using SagaPatternMichael.Orchestration.Models;
 using SagaPatternMichael.Orchestration.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SagaPatternMichael.Orchestration.OrchestrationConsume
 {

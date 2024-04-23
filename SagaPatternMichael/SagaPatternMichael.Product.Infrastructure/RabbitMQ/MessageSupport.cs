@@ -6,12 +6,15 @@ using System.Text;
 
 namespace SagaPatternMichael.Product.Infrastructure.RabbitMQ
 {
-    public abstract class MessageSupport : MessageConnection
+    public class MessageSupport : MessageConnection
     {
         private readonly IConfiguration _configuration;
-        public abstract string Queue { get; }
-        public abstract string Exchange { get; }
-        public abstract string RoutingKey { get; }
+
+        public override string Queue => throw new NotImplementedException();
+
+        public override string Exchange => throw new NotImplementedException();
+
+        public override string RoutingKey => throw new NotImplementedException();
 
         public MessageSupport(IConfiguration configuration)
         {

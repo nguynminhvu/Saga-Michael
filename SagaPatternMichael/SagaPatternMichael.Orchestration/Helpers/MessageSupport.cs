@@ -41,7 +41,7 @@ namespace SagaPatternMichael.Orchestration.Helpers
                 if (messageDTO == null) throw new ArgumentNullException(nameof(messageDTO));
                 InitBroker(new MessageChannel { ExchangeName = exchange, QueueName = queue, RoutingKey = routingKey });
 
-                var rawSerial = JsonConvert.SerializeObject(messageDTO.Data);
+                var rawSerial = JsonConvert.SerializeObject(messageDTO);
                 var body = Encoding.UTF8.GetBytes(rawSerial);
                 _channel.ConfirmSelect();
                 _channel.BasicPublish(exchange, routingKey, null!, body);

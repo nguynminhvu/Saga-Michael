@@ -7,7 +7,9 @@ namespace SagaPatternMichael.Product.Infrastructure.RabbitMQ
     {
         public IConnection _connection;
         public IModel _channel;
-
+        public abstract string Queue { get; }
+        public abstract string Exchange { get; }
+        public abstract string RoutingKey { get; }
         public IModel GetConnection(IConfiguration configuration, string queue, string exchange, string routingKey)
         {
             try

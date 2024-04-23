@@ -61,9 +61,9 @@ namespace SagaPatternMichael.Payment.Infrastructure.RabbitMQ
                     using var linkCts = CancellationTokenSource.CreateLinkedTokenSource(_cancellationTokenSource.Token, cancellationToken);
                     try
                     {
-                        await Task.Delay(Timeout.Infinite, cancellationToken);
+                        await Task.Delay(Timeout.Infinite, linkCts.Token);
                     }
-                    catch
+                    catch(OperationCanceledException)
                     {
                         if (_cancellationTokenSource.Token.IsCancellationRequested)
                         {

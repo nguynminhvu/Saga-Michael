@@ -1,0 +1,17 @@
+﻿using Microsoft.Extensions.Configuration;
+
+namespace SagaPatternMichael.Product.Infrastructure.RabbitMQ.Events.Consumes
+{
+    public class InventoryErrorCommand:MessageSupport
+    {
+        public InventoryErrorCommand(IConfiguration configuration) : base(configuration)
+        {
+        }
+
+        public override string Queue => "InventoryErrorQueue";
+
+        public override string Exchange => "InventoryErrorExchange";
+
+        public override string RoutingKey => "inventory-error-routing-key";
+    }
+}
